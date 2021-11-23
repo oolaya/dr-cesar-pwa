@@ -1,0 +1,19 @@
+.img-content {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.3;
+    left: -11px;
+}
+
+.text-content {
+    z-index: 100;
+    text-align: justify;
+}
+
+.text-content-title {
+    color: var(--ion-color-secondary) !important;
+}
+
+.btn-car-see-more {
+    cursor: pointer;
+}

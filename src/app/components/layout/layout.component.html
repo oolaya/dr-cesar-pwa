@@ -1,0 +1,33 @@
+<app-header [menus]="menus" [showMenu]="!itsMobile"></app-header>
+<ion-content padding>
+  <ion-router-outlet></ion-router-outlet>
+
+  <div *ngIf="itsMobile">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button *ngFor="let menu of menusT" (click)="redirect(menu.path)">
+          <ion-icon color="secondary" [ios]="menu.icon + '-outline'" [md]="menu.icon + '-sharp'"></ion-icon>
+          <ion-label>{{ menu.label }}</ion-label>
+        </ion-tab-button>
+        <ion-tab-button></ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" edge="false">
+    <ion-fab-button type="button">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button *ngFor="let m of contacts" type="button" color="black" (click)="sendUrl(m)">
+          <ion-icon [color]="m.color" [name]="m.icon">{{ m.label }}</ion-icon>
+      </ion-fab-button>     
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer> -->

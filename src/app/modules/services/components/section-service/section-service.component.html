@@ -1,0 +1,20 @@
+<div class="line-card" style="margin-top: 15%;"></div>
+<div class="card" *ngIf="seccionT" [id]="seccionT.idLottie+'_'+seccionT._id">
+  <div class="card-header">    
+    <h1 class="card-title">{{seccionT.title}}</h1>
+    <h3 class="card-subtitle mb-2 text-muted">{{seccionT.technique}}</h3>
+    <h3 class="card-subtitle mb-2 text-muted" >{{seccionT.label}}</h3>
+  </div>  
+  <div class="card-body card_body" > 
+    <lottie-player height="400" width="400" [id]="seccionT.idLottie" [src]="seccionT.resourceJson" (animationCreated)="animationCreated($event)">
+    </lottie-player>
+    <ion-row style="text-align: center">
+      <ion-col class="home-tilte-seccionT">
+        <ion-button size="small" shape="round" color="secondary" [fill]="seccionT.fill"
+          (click)="action()">
+          ver más
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

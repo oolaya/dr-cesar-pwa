@@ -1,0 +1,90 @@
+[
+    {
+        "_id": 1,
+        "active": true,
+        "title": "Bracket Convencional",
+        "technique": "TÉCNICA MBT",
+        "label": "Tu sonrisa llena de",
+        "other": "COLOR",
+        "icon": "",
+        "path": "/services",
+        "fill": "outline",
+        "image": "assets/img/braket-plata.jpeg",
+        "class": "",
+        "idLottie": "firstLottie",
+        "resourceJson": "./assets/videos/data_1.json",
+        "content": {
+            "_id": 1,
+            "body": "<br><br>Este es el clásico sistema de brackets de ligado elástico acreditado por décadas por su eficacia en el tratamiento de todos los tipos de problemas dentales que requieren terapia ortodóntica.‍ <br><br> A continuación describiré algunos conceptos básicos de este sistema de brackets que generalmente no son explicados al paciente, y que son fundamentales a la hora de conseguir los resultados propuestos en cada uno de mis planes de tratamiento. <br><br> Cabe anotar que el éxito de un tratamiento de Ortodoncia  de ligado elástico se basa en una serie de factores. <br><br><br> <strong class='text-content-title'> Clínicos:<strong> <br>  <ul> <li> Un correcto diagnostico.</li><br> <li>Un plan de tratamiento individualizado para las necesidades de cada paciente y el uso racional de fuerzas biomecánicas.</li></ul> ‍<br> <strong class=\"text-content-title\"> Mecánicos:</strong><br> Brackets, alambres y adhesivos de excelente calidad que garanticen su biocompatibilidad, alta comodidad y excelente adhesión al tejido dental. <br>En  los  tratamientos con el sistema de ligado elástico, utilizo brackets de la marca ORTHO ORGANIZERS, de la serie DI MIM® técnica MBT.",
+            "image": "assets/img/content/nuevobracket.jpeg",
+            "class": "",
+            "type": "popup"
+        }
+    },
+    {
+        "_id": 2,
+        "active": true,
+        "title": "Bracket Autoligado",
+        "technique": "TÉCNICA MBT",
+        "label": "Sistema de baja fricción y movimiento más veloz.",
+        "other": "",
+        "icon": "",
+        "path": "/neo",
+        "fill": "outline",
+        "image": "assets/img/braket-color.jpeg",
+        "class": "",
+        "idLottie": "secondtLottie",
+        "resourceJson": "./assets/videos/data_4.json",
+        "content": {
+            "_id": 2,
+            "body": "En contrucción",
+            "image": "assets/img/content/bracket-02.png",
+            "class": "",
+            "type": "popup"
+        }
+    },
+    {
+        "_id": 3,
+        "active": true,
+        "title": "Bracket Estético",
+        "technique": "TÉCNICA MBT",
+        "label": "Sonrisa radiante",
+        "other": "",
+        "icon": "",
+        "path": "/neo",
+        "fill": "outline",
+        "image": "assets/img/neo.png",
+        "class": "neo-img",
+        "idLottie": "thirdLottie",
+        "resourceJson": "./assets/videos/data_3.json",
+        "content": {
+            "_id": 3,
+            "body": "En contrucción",
+            "image": "assets/img/content/bracket-03.jpg",
+            "class": "",
+            "type": "popup"
+        }
+    },
+    {
+        "_id": 4,
+        "active": true,
+        "title": "Prediagnóstico",
+        "technique": "",
+        "label": "Prediganóstico Vistual.",
+        "other": "",
+        "icon": "",
+        "path": "/diagnosis",
+        "fill": "outline",
+        "image": "",
+        "class": "",
+        "idLottie": "fourthLottie",
+        "resourceJson": "./assets/videos/data.json",
+        "content": {
+            "_id": 4,
+            "body": "",
+            "image": "",
+            "class": "",
+            "type": "redirect"
+        }
+    }
+]

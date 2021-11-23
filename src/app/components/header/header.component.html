@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="secondary" color="secondary" collapse="true" class="menus-nav" *ngIf="showMenu">
+      <ion-button *ngFor="let menu of menus" slot="end" size="small" shape="round" color="secondary" [fill]="menu.fill"
+        (click)="redirect(menu.path)">
+        {{menu.label}}
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+
+    </ion-title>
+    <ion-buttons slot="end" class="menu-nav-btn">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- <div class="lottie-logo">
+  <ng-lottie height="40%" width="88%" [styles]="styles" [options]="options">
+  </ng-lottie>
+</div > -->

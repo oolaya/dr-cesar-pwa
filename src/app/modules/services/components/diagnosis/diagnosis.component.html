@@ -1,0 +1,94 @@
+<ion-content>
+  <div class="container">
+    <div *ngIf="!imgTakend && !excuteSend">
+      <h1>Prediagnóstico</h1>
+      <ion-item>
+        <ion-label class="ion-text-wrap" style="text-align: justify;">
+          A continuación deberás hacer click en el botón iniciar, al accionar el
+          botónel sistema solicitara permiso para tomar o subir una fotografía,
+          posteriormente, encontraras 5 categorías en las cuales puedes de forma
+          visual clasificar tu caso y enviar el reporte directamente al Dr Cesar.
+        </ion-label>
+      </ion-item>
+
+<div class="container" style="margin-top: 5%; margin-bottom: 5%;">
+  <div class="row" style="text-align: center;">
+    <div class="col" *ngFor="let slide of slides" style="margin: 9px 0 10px 0px;">
+      <ion-label color="secondary">{{slide.label}} </ion-label><br>
+      <img [src]="slide.img" class="img-thumbnail" (click)="camera(); setSeccion(slide.id)" alt="" style="max-width: 100px; cursor: pointer;">
+    </div>
+  </div>
+</div>
+    
+
+
+      <div style="width: 100%; text-align: center;">
+        <ion-button color="primary" (click)="camera(); setSeccion(1)">Iniciar Diagnóstico</ion-button>
+      </div>
+    </div>
+
+    <ion-segment scrollable value="heart" (ionChange)="createBeer($event)" [(ngModel)]="secctionDx"
+      *ngIf="imgTakend && !excuteSend">
+      <ion-segment-button value="1">
+        <ion-icon color="secondary" name="bandage-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        <ion-icon color="secondary" name="ribbon-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="3">
+        <ion-icon color="secondary" name="pulse-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="4">
+        <ion-icon color="secondary" name="star"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="5">
+        <ion-icon color="secondary" name="heart-half-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="secctionDx" *ngIf="imgTakend && !excuteSend">
+      <div *ngFor="let slide of slides">
+        <div class="container" style="text-align: center;" *ngSwitchCase="slide.id">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title color="secondary">{{ slide.label }}</ion-card-title>
+            </ion-card-header>
+            <div [id]="'slider_' + slide.id" class="beer-slider" data-beer-label="Ejemplo">
+              <img [src]="slide.img" alt="" />
+              <div class="beer-reveal" data-beer-label="Tu imagen">
+                <img [src]="imgTakend" alt="" style="opacity: 0.8" />
+              </div>
+            </div>
+            <ion-card-content>
+              {{slide.content}}
+            </ion-card-content>
+            <div style="width: 100%; margin: auto;">
+              <ion-button color="secundary" (click)="clear()">Limpiar</ion-button>
+              <ion-button color="secondary" (click)="presentModal(slide)">Seleccionar</ion-button>
+              <ion-item text-center>
+              </ion-item>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="excuteSend && imgTakend">
+      <ion-card style="text-align: center;">
+        <ion-card-header>
+          <ion-icon color="secondary" name="glasses-outline" slot="start"></ion-icon>
+          <ion-card-title color="secondary">Felicidades {{userSender?.fullName}}!!!</ion-card-title>
+        </ion-card-header>
+        <img *ngIf="selected" [src]="selected.img" alt="" />
+        <ion-card-content>
+          Tu informe ha sido envido, pronto el Dr Cesar se pondra en contacto.
+        </ion-card-content>
+        <div style="width: 100%; margin: auto;">
+          <ion-button color="secundary" (click)="clear()">Aceptar</ion-button>
+          <ion-item text-center>
+          </ion-item>
+        </div>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

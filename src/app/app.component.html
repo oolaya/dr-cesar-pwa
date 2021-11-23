@@ -1,0 +1,32 @@
+<ion-app>
+  <ion-content>
+    <ion-menu contentId="main" type="overlay" side="end">
+      <ion-content [fullscreen]="false">
+        <ion-list id="inbox-list">
+          <ion-list-header>Dr Cesar</ion-list-header>
+          <ion-menu-toggle auto-hide="true" menuId="main">
+            <ion-item *ngFor="let menu of menus; let i = index" menuClose (click)="redirect(menu.path)" lines="none"
+              detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="menu.icon + '-outline'" [md]="menu.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ menu.label }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <ion-list id="labels-list">
+          <ion-list-header>Contactanos</ion-list-header>
+          <ion-menu-toggle auto-hide="true" *ngFor="let contacto of contactos">
+            <ion-item routerDirection="root" [routerLink]="[contacto.path]" lines="none" detail="false"
+              routerLinkActive="selected" (click)="sendUrl(contacto)" >
+              <ion-icon slot="start" [ios]="contacto.icon " [md]="contacto.icon"></ion-icon>
+              <ion-label>{{ contacto.label }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <div class="container">    
+        <ion-router-outlet id="main"></ion-router-outlet>      
+    </div>    
+  </ion-content>
+</ion-app>

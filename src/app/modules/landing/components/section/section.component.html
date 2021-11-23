@@ -1,0 +1,21 @@
+
+<div class="line-card" ></div>
+<div class="card" *ngIf="seccionT">
+  <div class="card-header">
+    {{seccionT.label}}
+  </div>
+  <div class="card-body card_body">
+    <img srcset="{{seccionT.image}} 320w,
+      {{seccionT.image}} 200w,
+      {{seccionT.image}} 480w" sizes="(max-width: 320px) 150px,
+            (max-width: 480px) 250px,
+            450px" class="{{seccionT.class}}" />
+    <ion-row style="text-align: center">
+      <ion-col class="home-tilte-seccionT">
+        <ion-button size="small" shape="round" color="secondary" [fill]="seccionT.fill" (click)="redirect(seccionT.path)">
+          ver más
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

@@ -1,0 +1,357 @@
+/*
+ * Dark Colors
+ * -------------------------------------------
+ */
+
+@font-face {
+  font-family: "British shorthair";
+  src: url("./../fonts/British-Shorthair.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ion-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  --ion-background-color: #010001;
+  --ion-background-color-rgb: 255, 255, 255;
+
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 0, 0, 0;
+  --ion-color-step-50: #f2f2f2;
+  --ion-color-step-100: #e6e6e6;
+  --ion-color-step-150: #d9d9d9;
+  --ion-color-step-200: #cccccc;
+  --ion-color-step-250: #bfbfbf;
+  --ion-color-step-300: #b3b3b3;
+  --ion-color-step-350: #a6a6a6;
+  --ion-color-step-400: #999999;
+  --ion-color-step-450: #8c8c8c;
+  --ion-color-step-500: #808080;
+  --ion-color-step-550: #737373;
+  --ion-color-step-600: #666666;
+  --ion-color-step-650: #595959;
+  --ion-color-step-700: #4d4d4d;
+  --ion-color-step-750: #404040;
+  --ion-color-step-800: #333333;
+  --ion-color-step-850: #262626;
+  --ion-color-step-900: #191919;
+  --ion-color-step-950: #0d0d0d;
+
+  --ion-color-primary: #ffffff;
+  --ion-color-primary-rgb: 34, 36, 40;
+  --ion-color-primary-contrast: #878b92;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1e2023;
+  --ion-color-primary-tint: #383a3e;
+
+  --ion-color-secondary: #349fbd;
+  --ion-color-secondary-rgb: 52, 159, 189;
+  --ion-color-secondary-contrast: #f4f5f8;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: #2e8ca6;
+  --ion-color-secondary-tint: #48a9c4;
+
+  --ion-color-tertiary: #25afc4;
+  --ion-color-tertiary-rgb: 37, 175, 196;
+  --ion-color-tertiary-contrast: #f4f5f8;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #219aac;
+  --ion-color-tertiary-tint: #3bb7ca;
+
+  --ion-color-success: #009688;
+  --ion-color-success-rgb: 0, 150, 136;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #008478;
+  --ion-color-success-tint: #1aa194;
+
+  --ion-color-warning: #ffc107;
+  --ion-color-warning-rgb: 255, 193, 7;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0aa06;
+  --ion-color-warning-tint: #ffc720;
+
+  --ion-color-danger: #a70039;
+  --ion-color-danger-rgb: 167, 0, 57;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #930032;
+  --ion-color-danger-tint: #b01a4d;
+
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 36, 40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
+
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-facebook: #3b5998;
+  --ion-color-facebook-rgb: 34, 36, 40;
+  --ion-color-facebook-contrast: #3b5998;
+  --ion-color-facebook-contrast-rgb: 255, 255, 255;
+  --ion-color-facebook-shade: #3b5998;
+  --ion-color-facebook-tint: #3b5998;
+
+  --ion-color-whatsApp: #4dc247;
+  --ion-color-whatsApp-rgb: 34, 36, 40;
+  --ion-color-whatsApp-contrast: #4dc247;
+  --ion-color-whatsApp-contrast-rgb: 255, 255, 255;
+  --ion-color-whatsApp-shade: #4dc247;
+  --ion-color-whatsApp-tint: #4dc247;
+
+  --ion-color-linkedin: #007bb5;
+  --ion-color-linkedin-rgb: 34, 36, 40;
+  --ion-color-linkedin-contrast: #007bb5;
+  --ion-color-linkedin-contrast-rgb: 255, 255, 255;
+  --ion-color-linkedin-shade: #007bb5;
+  --ion-color-linkedin-tint: #007bb5;
+
+  --ion-color-instagram: #125688;
+  --ion-color-instagram-rgb: 34, 36, 40;
+  --ion-color-instagram-contrast: #125688;
+  --ion-color-instagram-contrast-rgb: 255, 255, 255;
+  --ion-color-instagram-shade: #125688;
+  --ion-color-instagram-tint: #125688;
+
+}
+
+ion-menu ion-content {
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+
+ion-menu.md ion-content {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 40px;
+  --padding-bottom: 20px;
+}
+
+ion-menu.md ion-list {
+  padding: 20px 0;
+}
+
+ion-menu.md ion-note {
+  margin-bottom: 30px;
+}
+
+ion-menu.md ion-list-header,
+ion-menu.md ion-note {
+  padding-left: 10px;
+}
+
+ion-menu.md ion-list#inbox-list {
+  border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+}
+
+ion-menu.md ion-list#inbox-list ion-list-header {
+  font-size: 22px;
+  font-weight: 600;
+
+  min-height: 20px;
+}
+
+ion-menu.md ion-list#labels-list ion-list-header {
+  font-size: 16px;
+
+  margin-bottom: 18px;
+
+  color: #757575;
+
+  min-height: 26px;
+}
+
+ion-menu.md ion-item {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  border-radius: 4px;
+}
+
+ion-menu.md ion-item.selected {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+ion-menu.md ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-menu.md ion-item ion-icon {
+  color: #349fbd;
+}
+
+ion-menu.md ion-item ion-label {
+  font-weight: 500;
+}
+
+ion-menu.ios ion-content {
+  --padding-bottom: 20px;
+}
+
+ion-menu.ios ion-list {
+  padding: 20px 0 0 0;
+}
+
+ion-menu.ios ion-note {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+ion-menu.ios ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 50px;
+}
+
+ion-menu.ios ion-item.selected ion-icon {
+  color: var(--ion-color-secondary);
+}
+
+ion-menu.ios ion-item ion-icon {
+  font-size: 24px;
+  color: #73849a;
+}
+
+ion-menu.ios ion-list#labels-list ion-list-header {
+  margin-bottom: 8px;
+}
+
+ion-menu.ios ion-list-header,
+ion-menu.ios ion-note {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+ion-menu.ios ion-note {
+  margin-bottom: 8px;
+}
+
+ion-note {
+  display: inline-block;
+  font-size: 16px;
+
+  color: var(--ion-color-medium-shade);
+}
+
+ion-item.selected {
+  --color: var(--ion-color-secondary);
+}
+
+.menus-nav {
+  margin-right: 2%;
+}
+
+ion-card {
+  border: 1px solid var(--ion-color-step-400);
+}
+
+.neo-img {
+  width: 25%;
+  margin-top: 40px;
+}
+
+.line-card {
+  border-top: 1px solid var(--ion-color-secondary);
+  width: 100%;
+}
+
+#footer {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 20px;
+}
+
+.lottie-logo {
+  margin-top: -146px !important;
+}
+
+.details-modal {
+  --height: 100%;
+  --width: 100%;
+}
+
+.send-email-modal {
+}
+
+.modal-send-email {
+  --border-color: red;
+}
+
+.spinner-class {
+  --color: #009688;
+  --spinner-color:#009688;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .lottie-logo {
+    margin-top: -147px !important;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .lottie-logo {
+    margin-top: -170px !important;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .menus-nav {
+    display: none;
+  }
+  .lottie-logo {
+    margin-top: -155px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ion-title#logo {
+    margin-left: 20%;
+  }
+  .menu-nav-btn {
+    display: none;
+  }
+  .lottie-logo {
+    margin-top: -166px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .lottie-logo {
+    margin-top: -166px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .lottie-logo {
+    margin-top: -166px !important;
+    -webkit-margin-top: -222px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .lottie-logo {
+    margin-top: -166px !important;
+  }
+}

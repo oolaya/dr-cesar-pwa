@@ -1,0 +1,68 @@
+[
+    {
+        "menuId": 1,
+        "active": true,
+        "label": "Teléfono",
+        "icon": "call-outline",
+        "path": "",
+        "fill": "outline",
+        "name": "call",
+        "target": "_top",
+        "color":"primary"
+    },
+    {
+        "menuId": 2,
+        "active": true,
+        "label": "Email",
+        "icon": "mail-outline",
+        "path": "",
+        "fill": "outline",
+        "name": "mail",
+        "target": "_top",
+        "color":"primary"
+    },
+    {
+        "menuId": 3,
+        "active": true,
+        "label": "Link",
+        "icon": "logo-linkedin",
+        "path": "https://www.linkedin.com/in/cesar-sanabria/",
+        "fill": "outline",
+        "name": "linkedin",
+        "target": "_blank",
+        "color":"linkedin"
+    },
+    {
+        "menuId": 4,
+        "active": true,
+        "label": "Instagram",
+        "icon": "logo-instagram",
+        "path": "https://www.instagram.com/drcesarsanabria/",
+        "fill": "solid",
+        "name": "instagram",
+        "target": "_blank",
+        "color":"instagram"
+    },
+    {
+        "menuId": 5,
+        "active": true,
+        "label": "Facebook",
+        "icon": "logo-facebook",
+        "path": "https://www.facebook.com/CesarSanabriaOrtodoncia",
+        "fill": "solid",
+        "name": "facebook",
+        "target": "_blank",
+        "color":"facebook"
+    },
+    {
+        "menuId": 3,
+        "active": true,
+        "label": "WhatsApp",
+        "icon": "logo-whatsapp",
+        "path": "https://wa.me/573164185391",
+        "fill": "solid",
+        "name": "whatsapp",
+        "target": "_blank",
+        "color":"whatsApp"
+    }
+]

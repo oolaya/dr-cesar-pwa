@@ -1,0 +1,41 @@
+<ion-header color="secondary">
+  <ion-toolbar>
+    <ion-buttons color="secondary" slot="start" style="font-size: xx-large; cursor: pointer;">
+      <ion-icon color="secondary" (click)="dismiss()" name="arrow-back"></ion-icon>
+    </ion-buttons>
+    <ion-title style="text-align:center">{{content.title}}</ion-title>
+    <ion-buttons slot="end" style="font-size: xx-large; cursor: pointer;">
+      <ion-icon color="secondary" (click)="dismiss()" name="close"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="container">
+    <img class="img-content" [src]="content.content.image" alt="">
+    <div class="text-content" [innerHtml]="content.content.body"></div>
+
+    <div class="row" style="margin-top: 5%;">
+      <div class="line-card"></div>
+      <div class="col" *ngFor="let item of allContentFilter">
+        <ion-card style="text-align: center;">
+          <ion-card-header>
+            <ion-card-title color="secondary">{{item.title}}</ion-card-title>
+          </ion-card-header>
+          <div style="text-align: center; width: 100%;">
+            <img class="img-thumbnail" (click)="filterContent(item._id)" [src]="item.content.image" alt=""
+              style="background: black; max-width: 100px; min-width: 100px; max-height: 100px; min-height: 100px; cursor: pointer;">
+          </div>
+
+          <ion-card-content>
+            {{item.label}}
+          </ion-card-content>
+          <ion-item class="ion-activated btn-car-see-more" (click)="filterContent(item._id)">
+            <ion-icon color="secondary" name="eye-outline" slot="start"></ion-icon>
+            <ion-label>Ver mas</ion-label>
+          </ion-item>
+        </ion-card>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+[
+    {
+        "_id": 1,
+        "active": true,
+        "label": "Ortodoncia",
+        "icon": "",
+        "path": "/services",
+        "fill": "outline",
+        "image": "assets/img/braket-plata.jpeg",
+        "class": ""
+    },
+    {
+        "_id": 2,
+        "active": true,
+        "label": "Ortopedia Maxilar",
+        "icon": "",
+        "path": "/neo",
+        "fill": "outline",
+        "image": "assets/img/braket-color.jpeg",
+        "class": ""
+    },
+    {
+        "_id": 3,
+        "active": true,
+        "label": "Estilo de vida",
+        "icon": "",
+        "path": "/neo",
+        "fill": "outline",
+        "image": "assets/img/neo.png",
+        "class": "neo-img"
+    },
+    {
+        "_id": 4,
+        "active": true,
+        "label": "Prediagnóstico",
+        "icon": "",
+        "path": "/services/diagnosis",
+        "fill": "outline",
+        "image": "",
+        "class": ""
+    }
+]

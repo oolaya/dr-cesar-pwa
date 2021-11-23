@@ -1,0 +1,3 @@
+<ion-content [scrollEvents]="true" (ionScroll)="doSomethingOnInternalScroll($event)">
+  <app-section-service  *ngFor="let item of seccionServices; let i = index"  [section]="item" ></app-section-service>
+</ion-content>

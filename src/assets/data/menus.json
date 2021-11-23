@@ -1,0 +1,26 @@
+[
+    {
+        "menuId": 1,
+        "active": true,
+        "label": "Servicios",
+        "icon": "accessibility",
+        "path": "/services",
+        "fill":"outline"
+    },
+    {
+        "menuId": 2,
+        "active": true,
+        "label": "NEO",
+        "icon": "medkit",
+        "path": "/neo",
+        "fill":"outline"
+    },
+    {
+        "menuId": 3,
+        "active": true,
+        "label": "Inicio",
+        "icon": "home",
+        "path": "/",
+        "fill":"solid"
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "drcesar-pwa",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

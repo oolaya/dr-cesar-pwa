@@ -1,0 +1,71 @@
+<ion-header color="secondary">
+  <ion-toolbar>
+    <ion-title style="text-align:center">Datos del prediagnostico</ion-title>
+    <ion-buttons slot="end" style="font-size: xx-large; margin-right: 5px; cursor: pointer;">
+      <ion-icon color="secondary" (click)="dismiss()" name="close"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="container">
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap" style="text-align: justify;">
+        Llena los campos y envia tu prediagnóstico, el Dr Cesar se pondra en contacto contigo.
+      </ion-label>
+    </ion-item>
+    <form [formGroup]="dxForm">
+      <ion-item-group>
+        <ion-item>
+          <ion-label position="floating">Nombre y Apellidos</ion-label>
+          <ion-input type="text" formControlName="fullName"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="dxForm.controls.fullName.errors?.required &&
+        (dxForm.controls.fullName.dirty ||
+          dxForm.controls.fullName.touched)">
+          <ion-label color="success">* Campo requerido</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Telefono</ion-label>
+          <ion-input type="number" formControlName="phone"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="dxForm.controls.phone.errors?.required &&
+        (dxForm.controls.phone.dirty ||
+          dxForm.controls.phone.touched)">
+          <ion-label color="success">* Campo requerido</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Correo electronico</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="dxForm.controls.email.errors?.required &&
+        (dxForm.controls.email.dirty ||
+          dxForm.controls.email.touched)">
+          <ion-label color="success">* Campo requerido</ion-label>
+        </ion-item>
+        <ion-item lines="none" *ngIf="dxForm.controls.email.errors?.email &&
+        (dxForm.controls.email.dirty ||
+          dxForm.controls.email.touched)">
+          <ion-label color="success">* Formato no valido para email</ion-label>
+        </ion-item>
+        <ion-item-divider>
+          <ion-label>¿Como te contactamos?</ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-label position="fixed">WhatsApp</ion-label>
+          <ion-toggle checked color="secondary" formControlName="whatsApp"></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label position="fixed">Email</ion-label>
+          <ion-toggle checked color="secondary" formControlName="iemail"></ion-toggle>
+        </ion-item>
+        <ion-item lines="none" *ngIf="!dxForm.controls.iemail.value && !dxForm.controls.whatsApp.value">
+          <ion-label color="success">* Selecciona una forma de contacto</ion-label>
+        </ion-item>
+        <ion-button class="btn-send-email" (click)="sendDx()"
+          [disabled]="!dxForm.valid || (!dxForm.controls.iemail.value && !dxForm.controls.whatsApp.value)"
+          color="secondary" expand="block">Enviar</ion-button>
+      </ion-item-group>
+    </form>
+  </div>
+</ion-content>
