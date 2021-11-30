@@ -2,41 +2,79 @@
     {
         "_id": 1,
         "active": true,
-        "label": "Ortodoncia",
+        "label": "Ortodocia",
         "icon": "",
         "path": "/services",
         "fill": "outline",
-        "image": "assets/img/braket-plata.jpeg",
+        "image": "",
         "class": ""
     },
     {
         "_id": 2,
         "active": true,
+        "label": "Braket Convencional",
+        "icon": "",
+        "path": "/services",
+        "fill": "outline",
+        "image": "assets/img/imagen2.png",
+        "class": ""
+    },
+
+
+
+
+    {
+        "_id": 3,
+        "active": true,
+        "label": "Braket Autoligado Braket Estético",
+        "icon": "",
+        "path": "/neo",
+        "fill": "outline",
+        "image": "assets/img/imagen3.png",
+        "class": ""
+    },
+    {
+        "_id": 4,
+        "active": true,
         "label": "Ortopedia Maxilar",
         "icon": "",
         "path": "/neo",
         "fill": "outline",
-        "image": "assets/img/braket-color.jpeg",
-        "class": ""
-    },
-    {
-        "_id": 3,
-        "active": true,
-        "label": "Estilo de vida",
-        "icon": "",
-        "path": "/neo",
-        "fill": "outline",
-        "image": "assets/img/neo.png",
+        "image": "assets/img/imagen4.png",
         "class": "neo-img"
     },
     {
-        "_id": 4,
+        "_id": 5,
         "active": true,
         "label": "Prediagnóstico",
         "icon": "",
         "path": "/services/diagnosis",
         "fill": "outline",
-        "image": "",
-        "class": ""
+        "image": "assets/img/imagen5.png",
+        "class": "neo-img"
+    },
+    {
+        "_id": 6,
+        "active":true,
+        "label": "",
+        "icon":"",
+        "path": "/services/diagnosis",
+        "fill":"outline",
+        "image":"assets/img/imagen6.png",
+        "class":"neo-img"
+
+    },
+    {
+        "_id":7,
+        "active":true,
+        "label":"",
+        "icon":"",
+        "path":"/services/diagnosis",
+        "fill":"outline",
+        "image":"assets/img/imagen7.png",
+        "class":"neo-img"
     }
+
+    
+
 ]
