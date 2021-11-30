@@ -1,7 +1,7 @@
 [
     {
         "_id": 1,
-        "active": true,
+        "active": false,
         "label": "Ortodocia",
         "icon": "",
         "path": "/services",
@@ -11,7 +11,7 @@
     },
     {
         "_id": 2,
-        "active": true,
+        "active": false,
         "label": "Braket Convencional",
         "icon": "",
         "path": "/services",
@@ -25,7 +25,7 @@
 
     {
         "_id": 3,
-        "active": true,
+        "active": false,
         "label": "Braket Autoligado Braket Estético",
         "icon": "",
         "path": "/neo",
@@ -35,7 +35,7 @@
     },
     {
         "_id": 4,
-        "active": true,
+        "active": false,
         "label": "Ortopedia Maxilar",
         "icon": "",
         "path": "/neo",
@@ -45,7 +45,7 @@
     },
     {
         "_id": 5,
-        "active": true,
+        "active": false,
         "label": "Prediagnóstico",
         "icon": "",
         "path": "/services/diagnosis",
@@ -55,7 +55,7 @@
     },
     {
         "_id": 6,
-        "active":true,
+        "active":false,
         "label": "",
         "icon":"",
         "path": "/services/diagnosis",
@@ -66,7 +66,7 @@
     },
     {
         "_id":7,
-        "active":true,
+        "active":false,
         "label":"",
         "icon":"",
         "path":"/services/diagnosis",
