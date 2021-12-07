@@ -64,10 +64,19 @@ a:hover {
 .ortodoncia-container{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;    
 }
+
+.convencional {
+    background:#012f61;
+}
+ 
+.convencional-p {
+    text-align: right;
+    color: aliceblue;
+    font-size: 50px;
+}
+
 .image-container{
     width: 100%;
     height: 350px;
