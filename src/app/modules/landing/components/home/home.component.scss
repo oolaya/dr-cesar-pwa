@@ -43,8 +43,17 @@ a:hover {
     color: #01c59f;   
 }
 
+
 .convencional {
     background: linear-gradient(75deg, rgba(8,64,121,1) 0%, rgba(2,19,50,1) 100%);
+}
+
+.col-sm-6-imagenprueba{
+   width: 150%;
+   height: 150%;
+   border-radius: 50%;
+   margin: 30%;
+   display: block;
 }
 
 .convencional-p {
@@ -54,26 +63,84 @@ a:hover {
 }
 .angulado{
     background: #fab91a;
+    float: left;
+    margin: auto;
 
 }
-.angulado-p{
+
+.img-angulado{
+   
+}
+
+.angulado-p{  
+    float: left;
    text-align: center;
     color: #fff;
     font-size: 40px;
 }
 .estetico{
-    // background:#e96f82 ;
-    background:#fe97a8 ;
+    background:#fc94a8 ;
+   
+}
 
+.img-estetico{
+    
 }
 .estetico-p{
+   
     text-align: end;
     color: #fff;
     font-size: 30px;
+    float:left;
 }
 
 .ortopedia{
    background:#95c2d5 ;  
+}
+.ortopedia-p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+.prediagnostico{
+    background:#fff;
+    float: left;
+}
+.prediagnostico-p{
+    
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+
+.ion-color-secondary{
+--ion-color-base: var(--ion-color-secondary, #3dc2ff) !important;
+--ion-color-base-rgb: var(--ion-color-secondary-rgb, 61, 194, 255) !important;
+--ion-color-contrast: var(--ion-color-secondary-contrast, #fff) !important;
+--ion-color-contrast-rgb: var(--ion-color-secondary-contrast-rgb, 255, 255, 255) !important;
+--ion-color-shade: var(--ion-color-secondary-shade, #36abe0) !important;
+--ion-color-tint: var(--ion-color-secondary-tint, #50c8ff) !important;
+}
+
+.neo{
+    background: black;
+}
+.neo-p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.neo2{
+    background: black;
+}
+
+.neo2{
+    text-align: center;
+    color: #fff;
+    font-size: 20;
 }
 
 .parallax__container {
