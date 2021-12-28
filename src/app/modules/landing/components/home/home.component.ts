@@ -51,7 +51,6 @@ export class HomeComponent implements OnInit {
   }
   show = false;
   getSeccion() {
-    debugger
     this.http.get('./assets/data/home-seccions.json').subscribe((seccions: any) => {
       this.seccionsT = seccions.filter(x => x.active == true);
       this.seccionsT1 = seccions.filter(x => x.active == true);

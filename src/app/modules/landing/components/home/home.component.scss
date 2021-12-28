@@ -1,170 +1,110 @@
-.image-dr {
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 500px;
-    z-index: -1;
-}
 
-.content{
-    width: 90%;
-    max-width: 1100px;
-    margin:0 auto;
-    overflow: hidden;
-    padding: 60px 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: fixed;
-    z-index: 2;
-    height: 100%;   
-}
 
-.container-hero{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.ortodoncia{
     text-align: center;
+    margin-bottom: 10%;
+    
 }
-.hero h1{
-    font-size: 40px;  
-    text-align: center;
+h1{
+    font-size: 50px;
 }
-
-
-a:link,
-a:visited {
-    color: #666;
-    text-decoration: underline;
-}
-a:hover {
-    color: #01c59f;   
+.convencional{
+    background: #023061;
 }
 
-
-.convencional {
-    background: linear-gradient(75deg, rgba(8,64,121,1) 0%, rgba(2,19,50,1) 100%);
+.convencional1{
+    float: left;
+    width: 100%;
+    height: 112%;
+    margin-bottom: 10%;
 }
 
-.col-sm-6-imagenprueba{
-   width: 150%;
-   height: 150%;
-   border-radius: 50%;
-   margin: 30%;
-   display: block;
-}
-
-.convencional-p {
+.text-right1{
     text-align: right;
-    color: aliceblue;
-    font-size: 40px;
-}
-.angulado{
-    background: #fab91a;
-    float: left;
-    margin: auto;
-
-}
-
-.img-angulado{
-   
-}
-
-.angulado-p{  
-    float: left;
-   text-align: center;
     color: #fff;
-    font-size: 40px;
-}
-.estetico{
-    background:#fc94a8 ;
-   
+    font-size: 50px;
+    text-decoration: none;
 }
 
-.img-estetico{
+img{
     
 }
-.estetico-p{
-   
-    text-align: end;
-    color: #fff;
-    font-size: 30px;
-    float:left;
-}
-
-.ortopedia{
-   background:#95c2d5 ;  
-}
-.ortopedia-p{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
 
 
-.prediagnostico{
-    background:#fff;
-    float: left;
-}
-.prediagnostico-p{
-    
-    text-align: center;
-    color:black;
-    font-size: 30px;
-}
 
-.ion-color-secondary{
---ion-color-base: var(--ion-color-secondary, #3dc2ff) !important;
---ion-color-base-rgb: var(--ion-color-secondary-rgb, 61, 194, 255) !important;
---ion-color-contrast: var(--ion-color-secondary-contrast, #fff) !important;
---ion-color-contrast-rgb: var(--ion-color-secondary-contrast-rgb, 255, 255, 255) !important;
---ion-color-shade: var(--ion-color-secondary-shade, #36abe0) !important;
---ion-color-tint: var(--ion-color-secondary-tint, #50c8ff) !important;
-}
 
-.neo{
-    background: black;
-}
-.neo-p{
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-}
 
-.neo2{
-    background: black;
-}
 
-.neo2{
-    text-align: center;
-    color: #fff;
-    font-size: 20;
-}
 
-.parallax__container {
-    clip: rect(0, auto, auto, 0);
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -100;
-}
 
-.parallax {
-    position: fixed;
-    top: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    width: 100%;
 
-    /* BG behaviour */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+ 
+
+
+
+
+
+
+
+
+
+
+
+// .image-dr {
+//     background-position: center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     min-height: 500px;
+//     z-index: -1;
+// }
+
+// .container-hero{
+//     height: 600px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+// }
+
+// .content{
+//     width: 90%;
+//     max-width: 1100px;
+//     margin:0 auto;
+//     overflow: hidden;
+//     padding: 60px 0;
+//     box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     position: fixed;
+//     z-index: 2;
+//     height: 100%;    
+// }
+
+// .hero h1{
+//     font-size: 40px;  
+//     text-align: center;
+// }
+
+// a:link,
+// a:visited {
+//     color: #666;
+//     text-decoration: underline;
+// }
+// a:hover {
+//     color: #01c59f;   
+// }
+
+
+// .ion-color-secondary{
+// --ion-color-base: var(--ion-color-secondary, #3dc2ff) !important;
+// --ion-color-base-rgb: var(--ion-color-secondary-rgb, 61, 194, 255) !important;
+// --ion-color-contrast: var(--ion-color-secondary-contrast, #fff) !important;
+// --ion-color-contrast-rgb: var(--ion-color-secondary-contrast-rgb, 255, 255, 255) !important;
+// --ion-color-shade: var(--ion-color-secondary-shade, #36abe0) !important;
+// --ion-color-tint: var(--ion-color-secondary-tint, #50c8ff) !important;
+// }
+
+
+
