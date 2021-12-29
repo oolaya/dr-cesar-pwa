@@ -88,14 +88,50 @@
       border-radius: 7px 7px 7px 7px;
   }
 
-
-
-
-
-
-
-
  
+  .neo{
+    background:black;
+    border-radius: 7px 7px 7px 7px;
+    padding-right: calc(var(--bs-gutter-x) * 3.5);
+  }
+  
+  .img-neo{
+    text-align: center;
+    float: right;
+    width: 40%;
+    height: 90%;
+    padding: 30px 0 0 0;
+  }
+  
+  .text-neo {
+    float: right;
+    text-align: left;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 132px 0 0 0;
+    position: relative;
+    
+  }
+
+.neo2{
+  background: black;
+  border-radius: 7px 7px 7px 7px;
+  font-style: italic;
+  color: #fff;
+  padding: 132px 0 0 0;
+}
+
+
+.text-ne2{
+  font-style:normal;
+font-weight: bold;
+font-size: 15px;
+}
+
+
+
+
 
 
 
