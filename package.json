@@ -49,6 +49,7 @@
     "ngx-lottie": "^7.0.3",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
+    "sass-google-fonts": "^1.0.1",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
